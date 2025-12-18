@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio - Home</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f0f0f0; /* Light grey background */
+      color: #333;
+      line-height: 1.6;
+      min-height: 100vh; /* Ensure body takes full height */
+      display: flex;
+      flex-direction: column; /* Allow footer to stick at bottom */
+    }
+
+    /* Navigation Bar */
+    nav {
+      background-color: #444; /* Dark grey */
+      padding: 1rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 0 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    /* Animation effect: underline slides in */
+    nav ul li a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: -5px;
+      left: 0;
+      background-color: #ddd;
+      transition: width 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #ddd;
+    }
+
+    nav ul li a:hover::after {
+      width: 100%;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+      flex: 1; /* Push footer down */
+    }
+
+    .hero img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 3px solid #444;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #444;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+      color: #555;
+    }
+
+    /* Footer pinned at bottom */
+    footer {
+      background-color: #444;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: auto; /* Push footer to bottom */
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <!-- TODO: Replace with your own profile photo -->
+    <img src="profile.jpg" alt="Profile Photo">
+
+    <!-- TODO: Replace with your name -->
+    <h1>Welcome to My Portfolio</h1>
+
+    <!-- TODO: Replace with your personal introduction -->
+    <p>Hello! I’m [Your Name], a student passionate about technology and information systems. 
+       This website showcases my background, projects, and ways to connect with me.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <!-- TODO: Update footer text if needed -->
+    <p>&copy; 2025 My Portfolio | Built with HTML, CSS, and GitHub Pages</p>
+  </footer>
+</body>
+</html>
