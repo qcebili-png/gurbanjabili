@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio - Home</title>
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <style>
     /* General Reset */
     * {
@@ -17,9 +21,9 @@
       background-color: #f0f0f0; /* Light grey background */
       color: #333;
       line-height: 1.6;
-      min-height: 100vh; /* Ensure body takes full height */
+      min-height: 100vh;
       display: flex;
-      flex-direction: column; /* Allow footer to stick at bottom */
+      flex-direction: column;
     }
 
     /* Navigation Bar */
@@ -74,8 +78,8 @@
     }
 
     .hero img {
-      width: 150px;
-      height: 150px;
+      width: 250px;   /* Larger profile photo */
+      height: 250px;
       border-radius: 50%;
       border: 3px solid #444;
       margin-bottom: 20px;
@@ -94,13 +98,29 @@
       color: #555;
     }
 
-    /* Footer pinned at bottom */
+    /* Footer */
     footer {
       background-color: #444;
       color: #fff;
       text-align: center;
       padding: 15px;
-      margin-top: auto; /* Push footer to bottom */
+      margin-top: auto;
+    }
+
+    /* Social Icons */
+    .social-icons {
+      margin-top: 10px;
+    }
+
+    .social-icons a {
+      color: #fff;
+      margin: 0 10px;
+      font-size: 1.5rem;
+      transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: #ddd;
     }
   </style>
 </head>
@@ -121,10 +141,10 @@
     <img src="profile.jpg" alt="Profile Photo">
 
     <!-- TODO: Replace with your name -->
-    <h1>Welcome to My Portfolio</h1>
+    <h1>Gurban Jabili</h1>
 
     <!-- TODO: Replace with your personal introduction -->
-    <p>Hello! I’m [Your Name], a student passionate about technology and information systems. 
+    <p>Hello! I’m Gurban Jabili, a student passionate about technology and information systems. 
        This website showcases my background, projects, and ways to connect with me.</p>
   </section>
 
@@ -132,6 +152,16 @@
   <footer>
     <!-- TODO: Update footer text if needed -->
     <p>&copy; 2025 My Portfolio | Built with HTML, CSS, and GitHub Pages</p>
+    
+    <!-- Social Icons -->
+    <div class="social-icons">
+      <!-- GitHub -->
+      <a href="https://github.com/qcebili-png" target="_blank"><i class="fab fa-github"></i></a>
+      <!-- Codecademy -->
+      <a href="https://www.codecademy.com/profiles/GURBANJABILI" target="_blank"><i class="fas fa-code"></i></a>
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/qurban-cebili-051359386/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
   </footer>
 </body>
 </html>
