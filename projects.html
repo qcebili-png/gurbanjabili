@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio - About</title>
+  <title>My Portfolio - Projects</title>
 
   <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -69,31 +69,57 @@
       width: 100%;
     }
 
-    /* About Section */
-    .about {
+    /* Projects Section */
+    .projects {
       flex: 1;
-      max-width: 800px;
+      max-width: 1200px; /* wider container */
       margin: 40px auto;
-      background: #fff;
-      padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 20px;
     }
 
-    .about h1 {
+    .projects h1 {
       text-align: center;
       color: #444;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
 
-    .about p {
+    .project-card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+      padding: 20px;
+    }
+
+    .project-card img {
+      width: 100%;          /* fills container width */
+      height: auto;         /* keeps aspect ratio */
+      max-width: 1416px;    /* limit to original size */
+      border-radius: 6px;
       margin-bottom: 15px;
+      display: block;
+    }
+
+    .project-card h2 {
+      color: #444;
+      margin-bottom: 10px;
+    }
+
+    .project-card p {
       color: #555;
     }
 
-    .about h2 {
-      margin-top: 25px;
+    .project-card a {
+      display: inline-block;
+      margin-top: 10px;
       color: #444;
+      font-weight: bold;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .project-card a:hover {
+      color: #000;
     }
 
     /* Footer */
@@ -133,20 +159,31 @@
     </ul>
   </nav>
 
-  <!-- About Section -->
-  <section class="about">
-    <!-- TODO: Replace with your own content -->
-    <h1>About Me</h1>
-    <p>Hello! My name is Gurban Jabili. I am a student passionate about information systems, programming, and technology. This page gives you a deeper look into my background and experiences.</p>
+  <!-- Projects Section -->
+  <section class="projects">
+    <h1>My Projects</h1>
 
-    <h2>Background</h2>
-    <p><!-- TODO: Write about your education, where you study, and your interests --> I am currently studying at ADA university, my major is Computer Engineering where I am learning about coding, GitHub, and web development.</p>
+    <!-- Project 1: Logic Gates -->
+    <div class="project-card">
+      <img src="project1.jpg" alt="Logic Gates Project Screenshot">
+      <h2>Project 1: Creating AND, OR, NOT Gates</h2>
+      <p>This project demonstrates how basic logic gates (AND, OR, NOT) are created and function. It was part of our coursework in SITE 1101 and shows the fundamentals of digital logic design.</p>
+      <a href="https://youtu.be/wEWO1FxQRXM?si=M4ut9280XpEAaEni" target="_blank">Watch our video here</a>
+    </div>
 
-    <h2>Qualifications</h2>
-    <p><!-- TODO: Add your skills, certifications, or achievements --> I have experience with HTML, CSS, Python and version control using Git. I also enjoy exploring AI-assisted coding tools.</p>
+    <!-- Project 2: Hour of AI -->
+    <div class="project-card">
+      <img src="project2.jpg" alt="Hour of AI Screenshot">
+      <h2>Project 2: Hour of AI</h2>
+      <p>This project was completed during the Hour of Code initiative. It demonstrates my ability to solve coding challenges and apply programming concepts in a fun, interactive way.</p>
+    </div>
 
-    <h2>Activities</h2>
-    <p><!-- TODO: Add extracurriculars, projects, or volunteer work --> I have worked on several projects including building personal websites and participating in coding challenges like Hour of Code.</p>
+    <!-- Project 3: Portfolio Website -->
+    <div class="project-card">
+      <img src="project3.jpg" alt="Portfolio Website Screenshot">
+      <h2>Project 3: Personal Portfolio Website</h2>
+      <p>This project is my personal portfolio website built with HTML, CSS, and JavaScript. It showcases my background, projects, and contact information, and is hosted on GitHub Pages.</p>
+    </div>
   </section>
 
   <!-- Footer -->
