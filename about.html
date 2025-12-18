@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio - Home</title>
+  <title>My Portfolio - About</title>
 
   <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -18,7 +18,7 @@
     }
 
     body {
-      background-color: #f0f0f0; /* Light grey background */
+      background-color: #f0f0f0;
       color: #333;
       line-height: 1.6;
       min-height: 100vh;
@@ -28,7 +28,7 @@
 
     /* Navigation Bar */
     nav {
-      background-color: #444; /* Dark grey */
+      background-color: #444;
       padding: 1rem;
     }
 
@@ -50,7 +50,6 @@
       transition: color 0.3s ease;
     }
 
-    /* Animation effect: underline slides in */
     nav ul li a::after {
       content: '';
       position: absolute;
@@ -70,32 +69,31 @@
       width: 100%;
     }
 
-    /* Hero Section */
-    .hero {
-      text-align: center;
-      padding: 50px 20px;
-      flex: 1; /* Push footer down */
+    /* About Section */
+    .about {
+      flex: 1;
+      max-width: 800px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 
-    .hero img {
-      width: 250px;   /* Larger profile photo */
-      height: 250px;
-      border-radius: 50%;
-      border: 3px solid #444;
+    .about h1 {
+      text-align: center;
+      color: #444;
       margin-bottom: 20px;
     }
 
-    .hero h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-      color: #444;
+    .about p {
+      margin-bottom: 15px;
+      color: #555;
     }
 
-    .hero p {
-      font-size: 1.2rem;
-      max-width: 600px;
-      margin: 0 auto;
-      color: #555;
+    .about h2 {
+      margin-top: 25px;
+      color: #444;
     }
 
     /* Footer */
@@ -135,30 +133,28 @@
     </ul>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <!-- TODO: Replace with your own profile photo -->
-    <img src="profile.jpg" alt="Profile Photo">
+  <!-- About Section -->
+  <section class="about">
+    <!-- TODO: Replace with your own content -->
+    <h1>About Me</h1>
+    <p>Hello! My name is [Your Name]. I am a student passionate about information systems, programming, and technology. This page gives you a deeper look into my background and experiences.</p>
 
-    <!-- TODO: Replace with your name -->
-    <h1>GURBAN JABILI</h1>
+    <h2>Background</h2>
+    <p><!-- TODO: Write about your education, where you study, and your interests --> I am currently studying SITE 1101: Principles of Information Systems, where I am learning about coding, GitHub, and web development.</p>
 
-    <!-- TODO: Replace with your personal introduction -->
-    <p>Hello! I’m Gurban Jabili, a student passionate about technology and information systems. 
-       This website showcases my background, projects, and ways to connect with me.</p>
+    <h2>Qualifications</h2>
+    <p><!-- TODO: Add your skills, certifications, or achievements --> I have experience with HTML, CSS, JavaScript, and version control using Git. I also enjoy exploring AI-assisted coding tools.</p>
+
+    <h2>Activities</h2>
+    <p><!-- TODO: Add extracurriculars, projects, or volunteer work --> I have worked on several projects including building personal websites and participating in coding challenges like Hour of Code.</p>
   </section>
 
   <!-- Footer -->
   <footer>
     <p>&copy; 2025 My Portfolio | Built with HTML, CSS, and GitHub Pages</p>
-    
-    <!-- Social Icons -->
     <div class="social-icons">
-      <!-- GitHub -->
       <a href="https://github.com/qcebili-png" target="_blank"><i class="fab fa-github"></i></a>
-      <!-- Codecademy -->
       <a href="https://www.codecademy.com/profiles/GURBANJABILI" target="_blank"><i class="fas fa-code"></i></a>
-      <!-- LinkedIn -->
       <a href="https://www.linkedin.com/in/qurban-cebili-051359386/" target="_blank"><i class="fab fa-linkedin"></i></a>
     </div>
   </footer>
